@@ -21,7 +21,10 @@
 ## Steps to Execute
 ### Convert pytorch model in to onnx
 >	wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+
 >	python export.py --weights yolov7.pt --grid --end2end --simplify --topk-all 100 --iou-thres 0.65 --conf-thres 0.35 --img-size 640 640 --max-wh 64
+
 ### Convert Onnx model in to IR format using model optimizer
+
 >	mo --input_model yolov7.onnx --reverse_input_channel
-sython export.py --weights yolov7.pt --grid --end2end --simplify --topk-all 100 --iou-thres 0.65 --conf-thres 0.35 --img-size 640 640 --max-wh 64
+
