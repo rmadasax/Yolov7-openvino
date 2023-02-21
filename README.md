@@ -1,6 +1,6 @@
 # Yolov7-openvino
 
-## Requiremnets
+## Requirements
 
 >	python3 -m venv openvino_env
 >	python -m pip install --upgrade pip
