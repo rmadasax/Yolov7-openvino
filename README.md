@@ -30,8 +30,8 @@
 
 ## Steps to Execute the model
 
->	 python3 test_onnx.py --model yolov7/yolov7.xml --input bus.jpg --type IR
+>	 python3 Yolov7_inference.py --model yolov7/yolov7.xml --input bus.jpg --type IR
 
-### Model type can IR for Openvino format and ONNX to run onnx model
+### type can be "IR" or "ONNX" to run Openvino model or to run onnx model
 ### By default backend is OpenVINOprovider , it can be configured CPUProvider to use with onnx runtime
 
