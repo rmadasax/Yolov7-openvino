@@ -3,10 +3,13 @@
 ## Requirements
 
 >	python3 -m venv openvino_env
+
 >	python -m pip install --upgrade pip
 >	pip install openvino-dev[pytorch]==2022.3.0
+
 >	pip install openvino-dev[extras]
 >	pip install openvino-dev[torch]
+
 >	pip install torch==1.13.1
 >	pip install torchvision
 >	pip install matplotlib
