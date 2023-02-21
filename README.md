@@ -35,3 +35,6 @@
 ### type can be "IR" or "ONNX" to run Openvino model or to run onnx model
 ### By default backend is OpenVINOprovider , it can be configured CPUProvider to use with onnx runtime
 
+## Inference result with IR format
+
+![Screenshot](bus.jpeg)
