@@ -30,10 +30,19 @@
 
 ## Steps to Execute the model
 
->	 python3 Yolov7_inference.py --model yolov7/yolov7.xml --input bus.jpg --type IR
+>	 python3 inference_yolov7.py --model yolov7/yolov7.xml --input bus.jpg --type IR
 
 ### type can be "IR" or "ONNX" to run Openvino model or to run onnx model
 ### By default backend is OpenVINOprovider , it can be configured CPUProvider to use with onnx runtime
+
+## Accuarcy Measurements with openvino model
+
+>	python export.py --weights yolov7.pt --img-size 640 --batch-size 1
+>	mo --input_model "{onnx_path}"  --input_shape "[1, 3, 640,640]"  --data_type FP32
+>	python3 yolov7_accuracy.py -m yolov7.xml -i inference/images/horses.jpg
+
+#####Test will run through the data base and prints the accuracy "Class,number Images, Labels,Precision,Recall,mAP@.5,mAP@.5:.95"
+
 
 ## Inference result with IR format
 
