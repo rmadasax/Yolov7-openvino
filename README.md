@@ -36,6 +36,7 @@
 ### By default backend is OpenVINOprovider , it can be configured CPUProvider to use with onnx runtime
 
 ## Accuarcy Measurements with openvino model
+#### Pre-requisite git clone https://github.com/WongKinYiu/yolov7
 
 >	python export.py --weights yolov7.pt --img-size 640 --batch-size 1
 >	mo --input_model "{onnx_path}"  --input_shape "[1, 3, 640,640]"  --data_type FP32
